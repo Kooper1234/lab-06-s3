@@ -1,5 +1,18 @@
 # Lab 06: Working with S3 Storage
 
+## My S3 buckets
+
+Link to my public bucket: https://public-uyv2ju.s3.amazonaws.com/index.html
+Private link: https://secret-uyv2ju.s3.amazonaws.com/pg65238.txt?AWSAccessKeyId=ASIA5NLFPVDPQ537LTEB&Signature=KPvdU3geUiHDVDe9nv66D%2Fr66Uk%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEIn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIHo3U%2FXuAE2sjulYQgFuNIkXp%2FQN2oA2L2XgIX9PmrHnAiBu6kpM9cxTQLUa3FX8gGN0QlEYZkmlp2NTIsaLSbKpniqtAghSEAEaDDkyMjAyMDE5NDUyNyIMxFhvOGNEpTu7W1J%2FKooCaTSRsDMhdj34NOzPGUYJvauk8IIbiAU9GP4jX5AVpzYOjTN%2FSg9cII1f%2BEiVJ%2B2Xlu2XEg82AzHmDP8AybXYYFCHc3rT8d%2FtRQgPeUG4s78wIpmeXrEp1MHUHqHVvsPOHT9nBrUihBa84q38Q4zcDFtMp58uLARaWtqT2T2lT%2F1mCC4BKEsrpgl8gWZ%2BU01MkyfpkOvXc%2B60V1tdbsGDl3D2fU7bWh01U1T%2F%2BWNxxhhpTzOPp69jdQKMJuV05FR538GSJheuhSR21iy8EUdFoVrGBy34YiM0bGmoxncX%2BQTOwOtX1vwdGUEXP3oz3K1khXhvVvRvN1f3%2BBfQVwE8M30VAzyonUExnZ8w447g1gY6ngFfXOfmGpSMAhMu7HZoCBtBzZg2E66WqW7%2BX8ZYTMYKwdOm%2Buti4jUvX8IsUseXc3S%2FaltmThCNOZsOAayk%2BT9aN%2FlZ1RGKR7wIlfWxs2n%2Fm8q7zjNj09hMg%2BCSxcexob35Euv1SinmZwaCywYBxsLLzk1HBFvDj59A5srcygrSKsKlOZlXnfYV9Kb%2BbGUixv1Y1i6%2BHIDPsCQ1w1JNwA%3D%3D&Expires=1793151754
+
+I would choose a public bucket if I am just storing public data for a project or work. I would use the private temporary link if I need to share sensitive information or something that I do not want other people to see.
+
+
+
+
+
+
+
 The goal of this lab is to get you comfortable with **Amazon S3** object storage, building on what you have learned about the command line, AWS accounts, and scripting. You will stage a collection of 100 books from [Project Gutenberg](https://www.gutenberg.org/) in a **public** bucket that anyone can browse in a web browser, and share a single book from a **private** bucket with a time-limited presigned URL.
 
 > **Note:** Review and adhere to the [coding best practices](https://github.com/ksiller/DS2022/blob/main/best-practices.md) where applicable when developing your scripts. The Python script in Task 1 and the bash script in Task 2 should follow the same scripting practices you used in [Lab 03](https://github.com/ksiller/lab-03-scripting), [Lab 04](https://github.com/ksiller/lab-04-sql), and [Lab 05](https://github.com/ksiller/lab-05-nosql): a shebang, functions with docstrings, comments, logging, `try`/`except` around calls to external services (AWS and web downloads), and an `if __name__ == "__main__":` block in Python, and `set -euo pipefail`, quoted variables, and validated positional arguments in bash. **Never put your AWS credentials in a script or commit them to GitHub.**
